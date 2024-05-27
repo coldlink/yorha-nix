@@ -76,6 +76,7 @@
 
   # Enable zsh
   programs.zsh.enable = true;
+  environment.shells = with pkgs; [ zsh ];
   users.defaultUserShell = pkgs.zsh;
 
   # Enable CUPS to print documents.

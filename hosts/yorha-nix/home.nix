@@ -92,5 +92,6 @@
     inputs.plasma-manager.homeManagerModules.plasma-manager
     ../../modules/home-manager/plasma.nix
     ../../modules/home-manager/git.nix
+    ../../modules/home-manager/zsh.nix
   ];
 }
