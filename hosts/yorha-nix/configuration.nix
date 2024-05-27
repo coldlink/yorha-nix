@@ -153,7 +153,8 @@
     pinentry
     tree
     wget
-  # wayland
+  
+    # wayland
     xorg.xhost
   ];
 
