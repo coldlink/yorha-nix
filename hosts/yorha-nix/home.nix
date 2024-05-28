@@ -48,6 +48,10 @@
     steam
     spotify
     warp-terminal
+
+    # utils
+    wineWow64Packages.full
+    mangohud
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
