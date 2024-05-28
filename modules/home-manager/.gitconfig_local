@@ -1,0 +1,18 @@
+[user]
+	email = mahesh@makani.dev
+	name = Mahesh Makani
+	signingkey = 67486987D0437BAC5AE9498C509F71CAE0DCB8CF
+[pull]
+	rebase = false
+[core]
+	excludesFile = ~/.gitignore
+	editor = code --wait
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+	verbose = true
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
