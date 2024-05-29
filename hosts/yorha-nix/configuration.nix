@@ -72,7 +72,12 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
+  # KDE Plasma 6 is now available on unstable
+  services.desktopManager.plasma6.enable = true;
+  services.xserver.displayManager.defaultSession = "plasma";
+  services.xserver.displayManager.sddm.wayland.enable = true;
+  programs.dconf.enable = true;
 
   # gnupg
   programs.gnupg.agent.enable = true;

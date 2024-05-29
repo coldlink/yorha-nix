@@ -46,7 +46,6 @@
     discord
     lutris
     spotify
-    warp-terminal
 
     # utils
     wineWow64Packages.full
