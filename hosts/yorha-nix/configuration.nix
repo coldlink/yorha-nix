@@ -75,8 +75,7 @@
   #services.xserver.desktopManager.plasma5.enable = true;
   # KDE Plasma 6 is now available on unstable
   services.desktopManager.plasma6.enable = true;
-  services.xserver.displayManager.defaultSession = "plasma";
-  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.xserver.displayManager.defaultSession = "plasmax11";
   programs.dconf.enable = true;
 
   # gnupg
