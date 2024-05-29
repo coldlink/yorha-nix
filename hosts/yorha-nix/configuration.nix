@@ -139,6 +139,15 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Steam
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
+  };
+
+  # Gamemode
+  programs.gamemode.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -167,6 +176,9 @@
   
     # wayland
     xorg.xhost
+
+    # games
+    mangohud
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

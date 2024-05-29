@@ -45,13 +45,12 @@
     # apps
     discord
     lutris
-    steam
     spotify
     warp-terminal
 
     # utils
     wineWow64Packages.full
-    mangohud
+    protonup
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -88,6 +87,7 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
     NIXOS_OZONE_WL = "1";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
   # Let Home Manager install and manage itself.
