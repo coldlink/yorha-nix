@@ -27,12 +27,6 @@
       useOSProber = true;
     };
 
-    grub2-theme = {
-      enable = false;
-      theme = "stylish";
-      footer = true;
-    };
-
     efi = {
       canTouchEfiVariables = true;
     };
@@ -183,6 +177,7 @@
     os-prober
     pinentry
     tree
+    warp-terminal
     wget
   
     # wayland
