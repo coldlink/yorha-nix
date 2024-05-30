@@ -2,12 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/nixos/stylix.nix
       ../../modules/nixos/nvidia.nix
       inputs.home-manager.nixosModules.default
     ];
@@ -27,7 +28,7 @@
     };
 
     grub2-theme = {
-      enable = true;
+      enable = false;
       theme = "stylish";
       footer = true;
     };
